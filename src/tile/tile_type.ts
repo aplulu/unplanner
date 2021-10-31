@@ -1,0 +1,99 @@
+export type TileType = {
+    type: number;
+    name: string;
+    color: string;
+    selectable?: boolean;
+    hasPoint?: boolean;
+    hasOutput?: boolean;
+};
+
+export const DefaultTileType = {
+    type: 0,
+    name: '空き地',
+    color: '#a5e866',
+};
+
+export const TileTypes:TileType[] = [{
+    type: 0,
+    name: '空き地',
+    color: '#a5e866',
+    selectable: true,
+}, {
+    type: 1,
+    name: '森',
+    color: '#1dcc17',
+    selectable: true,
+}, {
+    type: 2,
+    name: '家',
+    color: '#de5a37',
+    selectable: true,
+}, {
+    type: 3,
+    name: '畑',
+    color: '#e89526',
+    selectable: true,
+    hasPoint: true,
+}, {
+    type: 4,
+    name: '穀物庫',
+    color: '#e89526',
+    selectable: true,
+    hasPoint: true,
+}, {
+    type: 5,
+    name: '駅',
+    color: '#aba47f',
+    selectable: true,
+}, {
+    type: 6,
+    name: '市場',
+    color: '#ccac77',
+    selectable: true,
+    hasPoint: true,
+}, {
+    type: 7,
+    name: '公園',
+    color: '#baba99',
+}, {
+    type: 8,
+    name: '海',
+    color: '#e89526',
+}, {
+    type: 9,
+    name: '世界樹',
+    color: '#e89526',
+}, {
+    type: 10,
+    name: 'りんごの木',
+    color: '#e89526',
+}, {
+    type: 11,
+    name: 'みどりの木',
+    color: '#e89526',
+}, {
+    type: 12,
+    name: 'なしの木',
+    color: '#e89526',
+}, {
+    type: 13,
+    name: 'うめの木',
+    color: '#e89526',
+}, {
+    type: 14,
+    name: '製材所',
+    color: '#ee6a57',
+    selectable: true,
+    hasOutput: true,
+}, {
+    type: 15,
+    name: '工場',
+    color: '#dacec2',
+    selectable: true,
+    hasPoint: true,
+}, {
+    type: 16,
+    name: '風車',
+    color: '#d7aba2',
+    selectable: true,
+}];
